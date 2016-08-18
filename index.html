@@ -1,15 +1,16 @@
 <html>
 <head>
 	
+	<!-- Page/Browser Tab Title -->
 	<title>AnalogSea| Log-in</title>
 	
+	<!-- Page Meta-data -->
 	<meta charset="utf-8">
 	<meta name="description" content="Login form for AnalogSea">
 	<meta name="keywords" content="AnalogSea, Login, Log-in, AnalogSea Login">
 	<meta name="author" content="Chuck Dulde">
 
 	<!-- Links (stylesheets, fonts, etc.) -->
-
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -19,20 +20,31 @@
 	<body>
 
 		<!-- Company Logo -->	
-
 		<img src="./img/logo.png" class="logo" />
 
 		
 		<!-- Login Form -->
-
 		<form class="login" action="/signup/" method="POST">
+			
+			<!-- Form Title -->
 			<h1>Sign up</h1>
-
+			
+			<!-- Form Labels & Input Fields -->
+			<label for="email">Email</label>
+      		<input type="email" name='email' id='email' placeholder='foo@bar.com' required/>
+      
+       		<label for="password">Password</label>
+      		<input type="password" name='password' id='password' placeholder='1234passw0rd' required/>
+      		
+      		<!-- Form Submit Button -->
+      		<button type="submit">Sign up</button>
+      		
+      		<!-- Forgot Password Link -->
+      		<a href="/forgot_password/new">Forgot Password?</a>
 
 		</form>
 
-		<!-- Footer for Existing Account Holders -->
-
+		<!-- Sign-in Footer for Existing Account Holders -->
 		<p class="account-holder">Already have an account? &nbsp
 		<a href="/login" class="account-holder">Log In</a>
 		</p>

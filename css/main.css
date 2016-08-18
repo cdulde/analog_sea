@@ -10,7 +10,7 @@ width: 100%;
 margin-top: 30px;
 }
 
-img.logo {
+.logo {
 display: block;
 margin-left: auto;
 margin-right: auto;
@@ -19,12 +19,10 @@ height: 35px;
 
 form.login {
 	display: block;
-	margin-top: 30px;
+	margin: 30px auto 20px auto;
 	width: 400px;
-	height: 600px;
+	height: 430px;
 	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
 	padding-left: 40px;
 	padding-right: 40px;
 	padding-top: 40px;
@@ -32,15 +30,63 @@ form.login {
 
 form.login h1 {
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 40px auto;
 	color: gray;
 	font-weight: lighter;
 	}
+	
+form.login label {
+	display: block;
+	width: 320;
+	margin: 20 auto 20 auto;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+form.login input {
+	display: block;
+	margin: 0 auto 20px auto;
+	width: 320px;
+	height: 50px;
+	padding: 15px;
+	border: 2px solid lightgray;
+	font-family: Roboto;
+	color: gray;
+	font-size: 14px;
+}
+
+form.login button {
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+	display: block;
+	margin: 0 auto 15px auto;
+	background-color: rgb(90,188,101);
+	width: 320px;
+	height: 55px;
+	border: 2px solid lightgray;
+	font-family: Roboto;
+	color: white;
+	font-size: 18px;
+}
+
+form.login button:hover {
+	background-color: green;
+}
+
+form.login a {
+	display: block;
+	text-align: center;
+	margin: 0 auto 200px auto;
+	width: 320px;
+	font-family: Roboto;
+	color: gray;
+	font-size: 12px;
+}
 
 .account-holder {
 	text-align: center;
-	font-size: 16px;
+	font-size: 14px;
 	color: white;
 	font-weight: bold;
 }
